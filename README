@@ -1,0 +1,9 @@
+Directory content:
+
+MedIASubmission - Contains the article's latex fonts and pdf
+    + figures   - Contains the article's figures
+    + extraDocs - Contains the extra documents needed for MedIA submission
+
+MedIAResponse   - Contains the response given by the MedIA reviewers which
+                   is used as a working document for generating an improved
+                   version of the document
