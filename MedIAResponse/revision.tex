@@ -1,0 +1,144 @@
+\documentclass[]{tufte-handout}
+
+\usepackage{enumitem}
+\usepackage{trackchanges} 
+\usepackage{todonotes}
+
+\title{Jorunal working document based on MedIA reviews}
+\addeditor{sik}
+\addeditor{Fab}
+\addeditor{Gerard}
+\addeditor{Joan}
+\addeditor{Robert}
+
+\begin{document}
+\maketitle
+
+\section{Reviewer 1}\note[Fab]{Ignore this reviewer}
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+\small
+\item Manuscript Rating Question(s):  Scale   [1-5]
+\item The paper is of enough importance to warrant publication in MedIA  2
+\item The paper is technically sound  2
+\item The paper describes original work  3
+\item The work is of interest to the MedIA audience  3
+\item The paper contains material which might well be omitted  2
+\item The paper makes adequate references?  2
+\item The abstract is an adequate digest of the work reported  2
+\item The introduction gives the background of the work  2
+\item The summary and conclusions adequate  3
+\item The authors explain clearly what they have done  2
+\item The authors explain clearly why what they did was worth doing  3
+\item The order of presentation is satisfactory  3
+\item The English is satisfactory  2
+\item If there are color figures included, are they helpful/necessary?  2
+\item If there is a video, is it helpful/necessary?  N/A
+\end{itemize}
+ 
+\subsection{Comments}
+ 
+\begin{enumerate}
+\item The paper is very poorly written.  There are too many typos and grammatical errors that make the paper very difficult to comprehend.
+\item Many terminologies are described and utilized wrongly and unsuitably.
+\item Many important articles are missing.
+\end{enumerate}
+
+
+\section{Reviewer 2}
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+\small
+\item Manuscript Rating Question(s):  Scale   [1-5]
+\item The paper is of enough importance to warrant publication in MedIA  3
+\item The paper is technically sound  2
+\item The paper describes original work  N/A
+\item The work is of interest to the MedIA audience  3
+\item The paper contains material which might well be omitted  2
+\item The paper makes adequate references?  2
+\item The abstract is an adequate digest of the work reported  2
+\item The introduction gives the background of the work  3
+\item The summary and conclusions adequate  3
+\item The authors explain clearly what they have done  3
+\item The authors explain clearly why what they did was worth doing  3
+\item The order of presentation is satisfactory  2
+\item The English is satisfactory  3
+\item If there are color figures included, are they helpful/necessary?  3
+\item If there is a video, is it helpful/necessary?  N/A
+\end{itemize}
+
+\subsection{Abstract}
+This paper reviewed prevailing segmentation algorithms of breast lesions from Ultrasound images. The selected topic attracts me at first, but my enthusiasm rapidly reduced for the following reasons. First the authors failed to persuade me the novelty of this paper in comparison with other existing review papers \annote[sik]{(H. D. Cheng 2010, Jalalian 2013)}{These two surveys are set as detection, segmentation, classification. \\ Jalalian is a replication of Cheng2010 with 3years update.}, and, more importantly, I fail to see \annote[Fab]{the potential benefit this paper would contribute to the relative community}{Obtaining the results on a common database has added value}. Second, the paper is way too redundant and poorly organized, which would bring plenty of burdens for the reader to follow.
+
+\subsection{General comment}
+\begin{enumerate}
+\item What kind of the audience did the authors try to target? In my opinion, a survey paper should far beyond the summarization of the journal papers. Instead, the authors need to share their professional interpretation of the development in this area (i.e., segmentation in breast ultrasound image) at a relatively high level, rather than paying unnecessary attention to technical details. In the meantime, I would appreciate the authors \annote[sik]{to cover the basic knowledge background}{a review of how ultrasoud images look like and the problems that they offer (like shadowing) with image examples might be handy. Similarly to what we did for the section 1.3.2 Elements degrading BUS images, of my thesis}, state of the art, \annote[sik]{and existing challenges}{when presenting the image degradations}, which would potentially make this paper beneficial to researchers at different skill level. I recommend the authors to refer to Tobias Heimann et al. 2009 Medical Image Analysis paper for writing reference.
+
+\item This paper lacks novelty. There are already papers published about general review of ultrasound image segmentation (e.g., J. A. Noble 2006, \annote[sik]{J. A. Noble 2010}{it differed from our goal}, \annote[sik]{K. Saini 2010}{I was not aware of this one, but it looks really similar to Noble2006. I have not gone deeply through it yet.}, etc.), and specifically focused on implementation in breast (H. D. Cheng 2010, Jalalian 2013). I have no doubt there are lots of developments recently, but the authors failed to convince me why another survey paper is needed again now? Especially when I notice a lot of overlaps between this paper and other existing survey papers. I highly suggest the authors consider the last survey paper (H. D. Cheng 2010, Jalalian 2013) as the baseline, and \annote[sik]{justify/highlight the value/contribution of this draft}{we should clearly state it}.  Also, maybe focus on the more recent works, that brought the breakthrough to this field, is a good start point.
+
+\item This paper is way too redundant and disorganized which not only wears down the readers' patients but also confuses them. For instance, the reviewed methodologies were shown in Figure 2, \annote[sik]{which is neat and clear, but then the excessive 20 pages introduction seems chaotic}{This figure can be improved by using the figure of the Thesis presentation and use it to drive the text.}\todo[author=sik]{change methods summary figure} I would suggest the authors find a smart way to demonstrate and connect these algorithms, e.g., using the figure or table to review the information. In addition, for method section, the "Features" section sounds like a fragment in comparison with other sections, better structure is needed here. Same problem exists for "Segmentation Assessment" section: \annote[Fab]{I agree that it is worth to review the assessment algorithms}{keeping it was the right thing.}, as well as the inter- and intra- grader observation, but for \annote[sik]{"the inter- and intra- grader observation" would be more appropriate to show up in the introduction part}{the inter- intra observer experiment can be placed at the introduction to describe how challenging images are, maybe reporting some statistics about which images are more easy or difficult and link it to the US artifacts, which by the end is what the methodologies would be challenged with}.  Therefore, restructure and reorganization are necessary. Section1 and section2 are overlapped. Choose one way to categorize all
+the works and discuss all the works the authors surveyed within one consistent categorization.
+\end{enumerate}
+
+\subsection{Detailed comment}
+\begin{enumerate}
+\item I would suggest the authors delete Figure 1 since it is pretty obvious what the authors intend to demonstrate.
+\item For the fully-guided algorithm, only one recent paper falls into this category. In addition, there is no segmentation evaluation result for it as shown in Table 1. I would suggest deleting it.
+\item Figure 8 is very interesting effort to show, however, it solely represented results already published, which shows no extra value of showing it again.
+\item Lots of reference citations show up twice within the context.
+\item Reference Pons, G. 2013 should be titled "Evaluating Lesion Segmentation on Breast Sonography as Related to Lesion Type."
+\end{enumerate}
+
+
+\section{Reviewer 3}
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+\small
+\item Manuscript Rating Question(s):  Scale   [1-5]
+\item The paper is of enough importance to warrant publication in MedIA  5
+\item The paper is technically sound  3
+\item The paper describes original work  4
+\item The work is of interest to the MedIA audience  4
+\item The paper contains material which might well be omitted  4
+\item The paper makes adequate references?  2
+\item The abstract is an adequate digest of the work reported  1
+\item The introduction gives the background of the work  3
+\item The summary and conclusions adequate  2
+\item The authors explain clearly what they have done  2
+\item The authors explain clearly why what they did was worth doing  3
+\item The order of presentation is satisfactory  4
+\item The English is satisfactory  2
+\item If there are color figures included, are they helpful/necessary?  2
+\item If there is a video, is it helpful/necessary?  N/A
+\end{itemize}
+
+\section{Comments}
+
+This paper gives a comprehensive categorized overview of different techniques for lesion segmentation in breast ultrasound images, and in addition it also gives a review of different evaluation methods to evaluate the performance of these segmentation algorithms.
+
+Lesion segmentation in ultrasound images is gaining importance as the use of ultrasound imaging for breast cancer screening is increasing due to breast density laws and awareness. New ultrasound screening options such as 3D breast ultrasound are increasing the need for computer assistance and thus as a consequence automated lesion segmentation. Therefore I believe that the review article \annote[sik]{is of value to the readers of MedIA}{which journal are we targeting, MedIA again?}. Whether this warrants a 62 page overview is debatable. The authors might consider shortening the paper in some areas.
+
+The grammar and use of the English language at some points needs improvement. This is especially true for the abstract, e.g.:\todo{use english suggestions of reviewer 3}
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+\item "the success of treatment contributing to its early detection through screening" perhaps should read something like "success of treatment can be attributed to…".
+\item "the most discriminative signs for diagnose are subject to..." -> "...signs for diagnosis are subject..."
+\item "Therefore, the importance to develop segmentation procedures to properly delineate lesions in breast US images in order to improve Computer Aided Diagnosis (CAD) systems." -> Probably should be something like "Therefore it is important to…"
+
+\end{itemize}
+
+Also there seems to be something going wrong with the citations. There are often double names present e.g. "Hong et al. Hong et al. [2005]".\todo{write suited for the referencing format needed for the target conference}
+
+What seems to be missing for a review paper is the inclusion criteria for the papers added to the review. \annote[sik]{How were the papers selected that are being discussed. Is this a comprehensive list, is this at random? I think the search strategy should be documented.}{It can be documented using Heimann2009 as example which is not that different of what we did. \\ Heimann snipped can be found at the here as a inline todo}.
+
+\todo[inline]{To ensurecomprehensive coverage, we have screened all publications included in IEEE Transactions on Medical Imaging and Medical Image Analysis during the last 10 years for articles related to shape models. In addition, we have included a large number of articles from other international journals, but also numerous conference and workshop papers which present good ideas, but which have not been published in any journal yet. Our main source of references was the Internet; we have searched for the terms shape model and statistical model on PubMed, IEEE-Xplore, Citeseer and Google. We have also followed the references encountered in papers from these sites, until we had collected a comprehensive library of more than 400 articles on the topic. In case we encountered several papers from one author about the same subject, we generally picked the most detailed one for this review. }
+
+\annote[sik]{In believe that some essential methods}{I dont agree on this one, at least with the examples the reviewer give, but what can I say.} are missing such as cell-based contour grouping by \annote[sik]{Cheng et al, Radiology, 2010}{I missed that one, but is one of the 100 remakes this people does, its predecessor method was in the survey} Jun; spiral-scanning based dynamic programming used in a CADx paper by \annote[sik]{Tan et al. TMI, 2012 May;31(5)}{This one looks promising but its in 3D which we completely skipped} and a clustering method such as \annote[sik]{Shan et al. MP, 2012 Sep(9).}{we got this one on the pull, but we skipped for bad. Maybe I should had to do so.}
+
+In my opinion the paper would greatly benefit from a better explanation of the problems encountered when dealing with lesion segmentation in ultrasound images, and why some methods are better suited than others. The authors mention "strong noise natural of US imaging" and "presence of strong US artifacts", but don't further explain how these make the task of lesion segmentation more difficult. It would be good if the authors would mention for example the \annote[sik]{posterior shadowing that often results from lesions, and how this affects lesion segmentation.}{If we start with the images appearance and problems then we can draw this sort of conclusions, the problem is that no author give this information. So unless we have segmentations to discuss and exemplify I have no idea how to address it.}
+
+I think that the authors could remove the link that they try to make between the semi-automatic methods and CADe initialization in their paper. All semi-automatic methods requiring some seed point could probably be made auto-guided, by using CADe to provide the seed point. Perhaps a categorization based on the extent of user-interaction could be considered (e.g. 1 seed point, 1 point inside 1 point outside the lesion, a bounding box, an initial contour).
+
+It would be nice to read in the conclusion what the strengths and weaknesses are of the described methods and what the current trends are, which problems need to be solved, and where we can expect improvements in the near future.
+
+\section{TODO}
+\listoftodos
+
+
+\end{document}

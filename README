@@ -3,7 +3,16 @@ Directory content:
 MedIASubmission - Contains the article's latex fonts and pdf
     + figures   - Contains the article's figures
     + extraDocs - Contains the extra documents needed for MedIA submission
+    - model2-names.bst - Is a needed file to compile the bibliography for revision style.
 
 MedIAResponse   - Contains the response given by the MedIA reviewers which
                    is used as a working document for generating an improved
                    version of the document
+    + SuggestedRef - Contains the articles the reveiwers have suggested to take a look at.
+
+Packages Needed:  elsarticle, lineno. (in gentoo: dev-texlive/texlive-humanities,
+                                                  dev-texlive/texlive-publishers)
+                  More information can be found in:
+                  http://support.river-valley.com/wiki/index.php?title=Elsarticle.cls
+                  
+
