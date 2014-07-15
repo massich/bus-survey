@@ -3,4 +3,8 @@
 *.synctex.gz
 *.log
 *.bbl
+*.out
+*.tdo
+*.blg
+*.spl
 
