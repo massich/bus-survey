@@ -1,10 +1,34 @@
-# Ignore all the latex generated files
-*.aux
-*.synctex.gz
-*.log
-*.bbl
-*.out
-*.tdo
-*.blg
-*.spl
+# ignore the pdfs with some execptions
 
+# igonre the regular extra files from latex
+*.spl
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.run.xml
+*.synctex.gz
+*.tdo
+*.toc
+
+# ignore the files produced by latexmk
+.*.swp
+*.fdb_latexmk
+*.fls
