@@ -12,13 +12,10 @@
 \input{content/acronym_definition.tex}      % contains the acronims
 
 %% Select inputing only one part of the document
-\includeonly{content/intro/intro}   % the file wihtout .tex
+% \includeonly{./content/intro/intro}   % the file wihtout .tex
 % \includeonly{content/other/other_content}
 
 %% Include all macros below
-
-\newcommand{\lorem}{{\bf LOREM}}
-\newcommand{\ipsum}{{\bf IPSUM}}
 
 %% END MACROS SECTION
 
@@ -35,10 +32,12 @@
 
 %% Incldue the content without .tex extension
 % \acresetall  % reset the acronyms from the abstract
-\include*{content/intro/intro}          % the file wihtout .tex
-\include*{./content/other/other_plos}
-\include*{content/other/other}
+\include*{./content/intro/intro}          % the file wihtout .tex
 \nolinenumbers
+
+\listoftodos
+
+
 
 %\section*{References}
 % Either type in your references using
