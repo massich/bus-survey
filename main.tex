@@ -18,7 +18,7 @@
 %% Include all macros below
 
 %% END MACROS SECTION
-
+\reversemarginpar
 \begin{document}
 \input{content/frontmatter.tex}             % contains the Title and Autor info
 
@@ -33,6 +33,8 @@
 %% Incldue the content without .tex extension
 % \acresetall  % reset the acronyms from the abstract
 \include*{./content/intro/intro}          % the file wihtout .tex
+\include*{./content/seg_assessment/segmentation_assessment}
+
 \nolinenumbers
 
 \listoftodos
