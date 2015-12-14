@@ -1,5 +1,5 @@
 % include the figures path relative to the master file
-\graphicspath{ {./content/analysis/figures} }
+\graphicspath{ {./content/analysis/figures/} }
 
 % \section{Segmentation method analysis}
 \section{materials and methods (Segmentation method analysis)}
@@ -21,46 +21,34 @@ These queries screen all the publications included by targeted journals during t
 \end{itemize}
 
 
-% \begin{table}[ht]
-%   \caption{Query\todo{Query caption}}
-%   \medskip
-%     \begin{tabular}{r c}
-%       % \toprule
-%       token & keyword\\
-%       % \midrule
-%       organ: & breast \\
-%       task: & segmentation, delineation, contouring \\
-%       modality: & Ultrasound, Ultra-Sound, Ultrasonic, \\
-%       & US image, Sonography, Sonograms \\
-%       target publications: & %\todo{target publications}
-%       % \bottomrule
-%     \end{tabular}
-%   \label{tab:query}
-% \end{table}
-
 \begin{table}[!ht]
 \begin{adjustwidth}{-2.25in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
 \caption{
-{\bf Table caption Nulla mi mi, venenatis sed ipsum varius, volutpat euismod diam.}}
-\begin{tabular}{|l|l|l|l|l|l|l|l|}
-\hline
-\multicolumn{4}{|l|}{\bf Heading1} & \multicolumn{4}{|l|}{\bf Heading2}\\ \hline
-$cell1 row1$ & cell2 row 1 & cell3 row 1 & cell4 row 1 & cell5 row 1 & cell6 row 1 & cell7 row 1 & cell8 row 1\\ \hline
-$cell1 row2$ & cell2 row 2 & cell3 row 2 & cell4 row 2 & cell5 row 2 & cell6 row 2 & cell7 row 2 & cell8 row 2\\ \hline
-$cell1 row3$ & cell2 row 3 & cell3 row 3 & cell4 row 3 & cell5 row 3 & cell6 row 3 & cell7 row 3 & cell8 row 3\\ \hline
-\end{tabular}
-\begin{flushleft} Table notes Phasellus venenatis, tortor nec vestibulum mattis, massa tortor interdum felis, nec pellentesque metus tortor nec nisl. Ut ornare mauris tellus, vel dapibus arcu suscipit sed.
+{\bf \deleted[id=sik, remark="make better caption"]{Query.}}}
+    \begin{tabular}{r|c}
+      % \toprule
+      token & keyword\\
+      \hline
+      % \midrule
+      organ: & breast \\
+      task: & segmentation, delineation, contouring \\
+      modality: & Ultrasound, Ultra-Sound, Ultrasonic, \\
+      & US image, Sonography, Sonograms \\
+      target publications: & %\todo{target publications}
+      % \bottomrule
+    \end{tabular}
+    \begin{flushleft} \added[id=sik, remark="table notes"]{A combination of these keywords is used for each search.}
 \end{flushleft}
 \label{table1}
 \end{adjustwidth}
 \end{table}
 
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.8\textwidth]{./content/analysis/figures/wcloud.png}
-    \caption{Word cloud representing the key-concepts generated from the bibliographic corpus.\todo{make a better wcloud clustering concepts and better key-concept detection}}
-  \label{fig:wcloud}
-\end{figure}
-
+\begin{figure}
 % Howto make a wordcloud 
 % https://randomdeterminism.wordpress.com/2010/08/03/word-clouds-in-context/
+    \centering
+    \includegraphics[width=3.0in]{wcloud}
+    \caption{\deleted[id=sik, remark="make better caption"]{Word cloud representing the key-concepts generated from the bibliographic corpus.}}%\todo{make a better wcloud clustering concepts and better key-concept detection}}
+    \label{fig:wcloud}
+\end{figure}
+
