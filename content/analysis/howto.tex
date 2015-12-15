@@ -3,8 +3,10 @@
 
 % \section{Segmentation method analysis}
 \section{materials and methods (Segmentation method analysis)}
+\label{sec:material-and-methods}
+This \cref{sec:material-and-methods} describes the strategy we used to screen and analyse the body of technical literature that lead tho this article.
+Further details are available at the \emph{us-breast-lesion-delineation-survey}\todo{project website in github} open repository as scripts.
 
-Thus, the set of queries that generate the pool of methodologies present in this work are available at the \emph{us-breast-lesion-delineation-survey}\todo{project website in github} open repository as scripts.
 These queries screen all the publications included by targeted journals during the last 5 years for articles matching any of the search terms in order to build a bibliographic dataset. This dataset is complemented collecting all the articles that expand the citations tree, both forward and backwards, up to 2 levels. More details about this process can be found at the website of the project. Automatic criteria are used for rough pruning of the dataset while the final pruning has been carried out manually. Details of both are provided at the website.
 
 \paragraph{Analysis of the methods}
@@ -13,6 +15,7 @@ These queries screen all the publications included by targeted journals during t
   Apart from the gathering of the papers to review, the analysis has been done in the following manner:
 }
 \begin{itemize}
+  \item \added[id=sik]{data collection (add MICCAI which is reported by computer vision textbooks as the conference of reference for segmentation in medical imaging)}
   \item \added[id=sik]{the analysis is carried out in both bottom-up and top-down fashion}
   \item \added[id=sik]{using a generic corpora, key concepts from the selected articles are extracted using Rake algorithm.}
   \item \added[id=sik]{the key concepts are studied and they mainly cluster in four categories: (1) medical-breast related, (2) segmentation strategy, (3) evaluation, (4) other.}
@@ -43,6 +46,8 @@ These queries screen all the publications included by targeted journals during t
 \end{adjustwidth}
 \end{table}
 
+\Cref{fig:wcloud} illustrate the key-concepts extracted found in the literature clustered by topic. 
+
 \begin{figure}
 % Howto make a wordcloud 
 % https://randomdeterminism.wordpress.com/2010/08/03/word-clouds-in-context/
@@ -51,4 +56,5 @@ These queries screen all the publications included by targeted journals during t
     \caption{\deleted[id=sik, remark="make better caption"]{Word cloud representing the key-concepts generated from the bibliographic corpus.}}%\todo{make a better wcloud clustering concepts and better key-concept detection}}
     \label{fig:wcloud}
 \end{figure}
+
 
